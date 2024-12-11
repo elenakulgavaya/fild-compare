@@ -22,4 +22,4 @@ jobs:
         pip install -r requirements.txt
     - name: Running tests
       run: |
-        python src/fild_compare/diff.py
+        python fild_compare/diff.py
