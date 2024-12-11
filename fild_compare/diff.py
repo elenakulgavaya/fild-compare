@@ -31,7 +31,6 @@ class DiffType:
 class Diff(dict):
     """
     Importing
-        >>> from deepdiff import DeepDiff
         >>> from pprint import pprint
 
     Same object returns empty

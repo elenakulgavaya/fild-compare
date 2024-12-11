@@ -26,3 +26,8 @@ good-names=i,
            tz,
            Run,
            _
+
+[DESIGN]
+max-args=14
+max-positional-arguments=14
+min-public-methods=0
