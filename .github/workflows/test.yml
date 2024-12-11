@@ -18,4 +18,5 @@ jobs:
         cache: 'pip'
     - name: Running tests
       run: |
-        python diff.py
+        ls -la
+        python ./diff.py
