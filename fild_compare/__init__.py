@@ -1,2 +1,2 @@
-from .compare import compare_data
+from .compare import compare
 from .rule_decorator import compare_rule
