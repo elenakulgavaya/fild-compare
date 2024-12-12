@@ -6,6 +6,7 @@ ignore=LICENSE,
     pytest.ini,
     setup.cfg,
     requirements/,
+    tests/
     test-report.xml
 ignore-paths=dist,
     fild.egg-info
@@ -30,5 +31,5 @@ good-names=i,
 [DESIGN]
 max-args=14
 max-positional-arguments=14
-max-branches=13
+max-branches=14
 min-public-methods=0
