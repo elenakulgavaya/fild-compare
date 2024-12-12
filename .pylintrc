@@ -5,7 +5,7 @@ ignore=LICENSE,
     README.md,
     pytest.ini,
     setup.cfg,
-    requirements.txt,
+    requirements/,
     test-report.xml
 ignore-paths=dist,
     fild.egg-info

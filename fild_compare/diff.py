@@ -167,9 +167,6 @@ class Diff(dict):
             rules_child = rules.get(item_key)
             item_id = id(expected_child)
 
-            if parents_ids and item_id in parents_ids:
-                continue
-
             parents_added = set(parents_ids)
             parents_added.add(item_id)
             parents_added = frozenset(parents_added)
@@ -222,6 +219,9 @@ class Diff(dict):
                     'actual value': actual
                 }
         elif expected is actual:
+            if rules is not None:
+                self[DiffType.RulesUnapplied][parent] = str(rules)
+
             return
         elif not isinstance(expected, type(actual)):
             self[DiffType.TypeChanged][parent] = {
@@ -257,8 +257,3 @@ class Diff(dict):
             )
 
         return
-
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()

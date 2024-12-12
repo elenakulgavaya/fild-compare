@@ -9,7 +9,7 @@ from fild_compare.rule_decorator import compare_rule
 def check_is_valid_uuid(uuid_string, version=4):
     try:
         uuid.UUID(uuid_string, version=version)
-    except (ValueError, TypeError):
+    except (AttributeError, ValueError, TypeError):
         # If it's either a value error or a type error, then the string
         # is not a valid hex code for a UUID.
         return False
