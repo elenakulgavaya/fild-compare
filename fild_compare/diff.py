@@ -201,7 +201,7 @@ class Diff(dict):
                 self[DiffType.ValueChanged][parent] = {
                     'expected value': expected,
                     'actual value': actual,
-                    'diff': '\n'.join(diff)
+                    'found diff': '\n'.join(diff)
                 }
         elif expected != actual:
             self[DiffType.ValueChanged][parent] = {
