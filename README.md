@@ -1,4 +1,11 @@
-# fild-compare v 0.0.4
+> **DEPRECATED** — This package is no longer maintained.
+> Migrate to [surety-diff](https://github.com/elenakulgavaya/surety-diff):
+> `pip install surety-diff`
+>
+> Replace `from fild_compare import compare` with `from surety.diff import compare`.
+> Replace `from fild_compare.rules import ...` with `from surety.diff.rules import ...`.
+
+# fild-compare v 0.0.5
 
 ![Downloads](https://img.shields.io/pypi/dm/fild-compare.svg?style=flat)
 ![Python Versions](https://img.shields.io/pypi/pyversions/fild-compare.svg?style=flat)
